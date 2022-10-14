@@ -2,15 +2,15 @@
 ## opensource projet
 ### opensource study
 *opensource
-  +opensource
-      -opensource
+  + assignment
+      - group project
       
-> opensource
->> opensource
+> opensource2022
+>> account book application(가계부 어플)
 
-    opensource
+   딥러닝을 이용하 스마트 가계부 만들기 
     
  <hr/>
  
  _opnesource_
- __opensource__
+ --opensource2022__
