@@ -1,4 +1,4 @@
-// Assignment 4
+// Assignment 4(수정본) 
 
 #include <stdio.h>
 
@@ -8,7 +8,8 @@ void disp_menu(){
     printf("2.뺄셈 \n");
     printf("3.곱셈\n");
     printf("4.나눗셈\n");
-    printf("5.종료\n");
+    printf("5.나머지\n");
+    printf("6.종료\n");
 }
 
 // add/sub/mul/div 함수를 실수형으로 짜고 매개변수 x,y를 받아 각각의 함수에 맞는 계산결과를 return 하도록 구성함.
@@ -27,6 +28,9 @@ double mul(double x, double y){
 double div(double x, double y){
     return x/y;
 }
+           
+double rem(double x, double y){
+    return x%y;
 
 // main함수내에서는 계산기를 만드는 프로그램이므로 계속적으로 메뉴를 선택하고 원하는 연산을 하기위해 while문으로 구성함.
 // while문은 무한루프로 구성하였으며, while문이 돌때마다 disp_menu함수를 사용하여 메뉴가 계속 출력되게 하였고, 메뉴번호를 받아서 해당 계산에 이용되는 함수를 사용할 수 있게 함.
@@ -41,7 +45,7 @@ int main(void)
         disp_menu();
         printf("번호를 선택하세요:");
         scanf("%d",&i);
-        if ( i== 5 )
+        if ( i== 6 )
             break;
         printf("실수를 입력하시오:");
         scanf("%lf",&x);
@@ -59,9 +63,13 @@ int main(void)
         {
             printf("연산결과=%lf\n",mul(x,y));
         }
-        else 
+        else if (i = 4 )
         {
             printf("연산결과=%lf\n",div(x,y));
+        }
+        else
+        {
+            printf("연산결과=%lf\n",rem(x,y));
         }
     }
     return 0;
