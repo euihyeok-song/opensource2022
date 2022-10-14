@@ -12,5 +12,5 @@
     
  <hr/>
  
- _opnesource_
+ _project_
  __opensource2022__
